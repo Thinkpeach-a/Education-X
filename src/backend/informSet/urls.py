@@ -7,8 +7,6 @@ router = routers.SimpleRouter()
 router.register(r'UserApi', UserViewSet)
 router.register(r'UserScoreApi', UserScoreViewSet)
 router.register(r'UserFavApi', UserFavViewSet)
-#router.register(r'ModifyScoreApi')
-
 urlpatterns = [
     path('ModifyScoreApi/userscore:category=<int:score_category>/', UserScoreModifyApiView.as_view()),
 ]
